@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
+import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 
 export default function Hero() {
