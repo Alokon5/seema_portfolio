@@ -146,7 +146,7 @@ export default function Hero() {
                 className="relative w-full h-full rounded-full overflow-hidden border-8 border-black bg-gradient-to-br from-gray-900 to-black"
               >
                 <img
-                  src="/images/seema_image.png"
+                  src="seema_portfolio/images/seema_image.png"
                   alt="Seema Sahu"
                   className="w-full h-full object-cover"
                   onError={(e) => {
