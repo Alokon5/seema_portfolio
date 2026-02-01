@@ -5,5 +5,5 @@ import { defineConfig } from 'vite'
 
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss()], base: "/seema_portfolio/",
 })
