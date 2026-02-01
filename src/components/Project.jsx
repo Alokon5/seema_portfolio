@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
-import { FaExternalLinkAlt, FaGithub, FaStar, FaEye } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaEye, FaGithub, FaStar } from 'react-icons/fa'
 
 const projects = [
   {
     title: 'Mr. Groomer',
     description: 'Dubai-based pet grooming booking app with modern UI, real-time booking system, and service management.',
     tech: ['React', 'Node.js', 'Tailwind CSS', 'Firebase'],
-    status: 'Completed',
-    image: '/projects/mr-groomer.jpg',
-    liveLink: '#',
+    status: 'Live',
+    image: '/images/mr_groomer.png',
+    liveLink: 'https://groomer.nablean.com',
     githubLink: '#',
     features: [
       'Responsive design with pixel-perfect UI',
@@ -18,12 +18,12 @@ const projects = [
     ]
   },
   {
-    title: 'Outlook Education Platform',
+    title: 'Outbox Education Platform',
     description: 'Online education platform with course management, student dashboard, and interactive learning features.',
     tech: ['React', 'Node.js', 'Tailwind CSS', 'MongoDB'],
-    status: 'Completed',
-    image: '/projects/outlook.jpg',
-    liveLink: '#',
+    status: 'Live',
+    image: '/images/outbox.png',
+    liveLink: 'https://outbox.nablean.com',
     githubLink: '#',
     features: [
       'Course management system',
@@ -32,43 +32,43 @@ const projects = [
       'Payment integration'
     ]
   },
-  {
-    title: 'Delivery App',
-    description: 'Flutter-based delivery application with real-time tracking, order management, and driver allocation.',
-    tech: ['Flutter', 'Firebase', 'Google Maps', 'GetX'],
-    status: 'In Progress',
-    image: '/projects/delivery-app.jpg',
-    liveLink: '#',
-    githubLink: '#',
-    features: [
-      'Real-time order tracking',
-      'Driver allocation system',
-      'Push notifications',
-      'Payment gateway integration'
-    ]
-  },
-  {
-    title: 'Admin Dashboard',
-    description: 'Comprehensive admin dashboard with analytics, user management, and role-based access control.',
-    tech: ['React', 'Chart.js', 'Tailwind CSS', 'Express'],
-    status: 'Completed',
-    image: '/projects/admin-dashboard.jpg',
-    liveLink: '#',
-    githubLink: '#',
-    features: [
-      'Real-time analytics',
-      'Role-based access control',
-      'Data visualization',
-      'Bulk operations'
-    ]
-  },
+  // {
+  //   title: 'Delivery App',
+  //   description: 'Flutter-based delivery application with real-time tracking, order management, and driver allocation.',
+  //   tech: ['Flutter', 'Firebase', 'Google Maps', 'GetX'],
+  //   status: 'In Progress',
+  //   image: '/projects/delivery-app.jpg',
+  //   liveLink: '#',
+  //   githubLink: '#',
+  //   features: [
+  //     'Real-time order tracking',
+  //     'Driver allocation system',
+  //     'Push notifications',
+  //     'Payment gateway integration'
+  //   ]
+  // },
+  // {
+  //   title: 'Admin Dashboard',
+  //   description: 'Comprehensive admin dashboard with analytics, user management, and role-based access control.',
+  //   tech: ['React', 'Chart.js', 'Tailwind CSS', 'Express'],
+  //   status: 'Completed',
+  //   image: '/projects/admin-dashboard.jpg',
+  //   liveLink: '#',
+  //   githubLink: '#',
+  //   features: [
+  //     'Real-time analytics',
+  //     'Role-based access control',
+  //     'Data visualization',
+  //     'Bulk operations'
+  //   ]
+  // },
   {
     title: 'E-commerce Platform',
     description: 'Full-featured e-commerce platform with product management, cart, checkout, and order tracking.',
     tech: ['React', 'Redux', 'Node.js', 'Stripe'],
     status: 'Completed',
-    image: '/projects/ecommerce.jpg',
-    liveLink: '#',
+    image: '/images/cc.png',
+    liveLink: 'https://cashcropconnect.com',
     githubLink: '#',
     features: [
       'Product catalog with filters',
@@ -82,7 +82,7 @@ const projects = [
     description: 'Modern animated portfolio website with interactive elements and smooth animations.',
     tech: ['React', 'Framer Motion', 'Tailwind CSS', 'Three.js'],
     status: 'Live',
-    image: '/projects/portfolio.jpg',
+    image: '/images/portfolio.png',
     liveLink: '#',
     githubLink: '#',
     features: [
@@ -188,22 +188,22 @@ export default function Projects() {
                   >
                     {/* Project Image Placeholder */}
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
-                      <div className="text-center p-8">
-                        <div className="text-6xl font-bold text-gray-700 mb-4">
-                          {project.title.charAt(0)}
-                        </div>
-                        <p className="text-gray-500">{project.title}</p>
-                      </div>
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+
                     </div>
                   </motion.div>
 
                   {/* Status Badge */}
                   <div className="absolute top-4 right-4">
                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${project.status === 'Completed'
-                        ? 'bg-green-900/30 text-green-400 border border-green-800'
-                        : project.status === 'Live'
-                          ? 'bg-blue-900/30 text-blue-400 border border-blue-800'
-                          : 'bg-yellow-900/30 text-yellow-400 border border-yellow-800'
+                      ? 'bg-green-900/30 text-green-400 border bg- border-green-800'
+                      : project.status === 'Live'
+                        ? 'bg-blue-900/30 text-blue-400 border border-blue-800'
+                        : 'bg-yellow-900/30 text-yellow-400 border border-yellow-800'
                       }`}>
                       {project.status}
                     </span>

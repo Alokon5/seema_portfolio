@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaCode, FaMobileAlt, FaRocket, FaGraduationCap, FaBriefcase, FaCertificate } from 'react-icons/fa'
+import { FaBriefcase, FaCertificate, FaCode, FaGraduationCap, FaMobileAlt, FaRocket } from 'react-icons/fa'
 
 export default function About() {
   const education = {
@@ -38,7 +38,7 @@ export default function About() {
     "Frontend Developer – Nable",
     "Full-Stack Web Development – CodeHelp",
     "ReactJS Advanced Concepts – Coursera",
-    "Flutter Firebase Development – Udemy"
+
   ]
 
   const containerVariants = {
@@ -103,8 +103,8 @@ export default function About() {
             <motion.div variants={itemVariants}>
               <p className="text-lg text-gray-300 leading-relaxed">
                 I'm a dedicated developer focused on building scalable, high-performance
-                applications using <span className="text-cyan-300">React</span> and{" "}
-                <span className="text-blue-400">Flutter</span>. I care deeply about UI,
+                applications using <span className="text-cyan-300">React</span>
+                . I care deeply about UI,
                 animations, and writing maintainable code.
               </p>
               <p className="mt-4 text-lg text-gray-300 leading-relaxed">

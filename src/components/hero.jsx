@@ -73,7 +73,7 @@ export default function Hero() {
               <p className="mt-4 text-lg text-gray-400 max-w-xl">
                 Building modern, fast and user-friendly applications with
                 <span className="text-cyan-300"> React</span> and
-                <span className="text-blue-400"> Flutter</span>
+                <span className="text-blue-400"> Javascript</span>
               </p>
             </motion.div>
 
@@ -89,7 +89,7 @@ export default function Hero() {
 
             <motion.div variants={itemVariants} className="flex gap-6 pt-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Seema0199"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border border-gray-700 rounded-full hover:bg-white hover:text-black transition-all duration-300 hover:scale-110"
@@ -97,7 +97,7 @@ export default function Hero() {
                 <FaGithub className="text-xl" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/seema-sahu24"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border border-gray-700 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-110"
@@ -105,7 +105,7 @@ export default function Hero() {
                 <FaLinkedin className="text-xl" />
               </a>
               <button
-                onClick={() => window.open('/resume.pdf', '_blank')}
+                onClick={() => window.open('/sim.pdf', '_blank')}
                 className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:scale-105 transition-all duration-300 flex items-center gap-2"
               >
                 <FaDownload />
@@ -146,7 +146,7 @@ export default function Hero() {
                 className="relative w-full h-full rounded-full overflow-hidden border-8 border-black bg-gradient-to-br from-gray-900 to-black"
               >
                 <img
-                  src="seema_portfolio/images/seema_image.png"
+                  src="/images/seema_image.png"
                   alt="Seema Sahu"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -173,9 +173,10 @@ export default function Hero() {
                 className="absolute -bottom-6 -left-6 w-20 h-20 rounded-full border-2 border-dashed border-purple-500/30"
               >
                 <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center shadow-lg">
-                  <span className="text-xs font-bold">Flutter</span>
+                  <span className="text-xs font-bold">Js</span>
                 </div>
               </motion.div>
+              c
             </div>
           </motion.div>
         </div>

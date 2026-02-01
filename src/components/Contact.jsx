@@ -1,7 +1,9 @@
-import { motion } from 'framer-motion'
-import { useState } from 'react'
-import { FaCheckCircle, FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaPhone, FaUser } from 'react-icons/fa'
-import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si'
+import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { FaCheckCircle, FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaPhone, FaUser } from 'react-icons/fa';
+import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si';
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -19,21 +21,39 @@ export default function Contact() {
     })
   }
 
+
+
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setLoading(true)
+    e.preventDefault();
+    setLoading(true);
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    try {
+      const result = await emailjs.send(
+        'service_k47yavn',
+        'template_ppfv28v',
+        {
+          name: formData.name,     // maps to {{name}}
+          email: formData.email,   // maps to {{email}}
+          message: formData.message, // maps to {{message}}
+        },
+        'GOdXuyFuUS4aT21de'
+      );
 
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
-    setFormData({ name: '', email: '', message: '' })
-    setLoading(false)
+
+      console.log('Email sent:', result.text);
+      setSubmitted(true);
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Email sending error:', error);
+      alert('Oops! Something went wrong. Try again.');
+    }
+
+    setLoading(false);
 
     // Reset success message after 3 seconds
-    setTimeout(() => setSubmitted(false), 3000)
-  }
+    setTimeout(() => setSubmitted(false), 3000);
+  };
+
 
   const contactInfo = [
     {
@@ -60,13 +80,13 @@ export default function Contact() {
     {
       icon: <SiGithub />,
       label: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/Seema0199',
       color: 'hover:bg-gray-800'
     },
     {
       icon: <SiLinkedin />,
       label: 'LinkedIn',
-      url: 'https://linkedin.com',
+      url: 'https://linkedin.com/in/seema-sahu24',
       color: 'hover:bg-blue-600'
     },
     {
