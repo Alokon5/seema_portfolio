@@ -353,9 +353,9 @@ export default function Contact() {
         <p className="text-gray-500">
           © {new Date().getFullYear()} Seema Sahu. All rights reserved.
         </p>
-        <p className="text-gray-600 text-sm mt-2">
+        {/* <p className="text-gray-600 text-sm mt-2">
           Built with React, Framer Motion, and Tailwind CSS
-        </p>
+        </p> */}
       </motion.div>
     </section>
   )

@@ -32,7 +32,8 @@ export default function Skills() {
     { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 85, color: 'from-cyan-400 to-blue-500', category: 'Frontend' },
     { name: 'Bootstrap', icon: <SiBootstrap />, level: 80, color: 'from-purple-500 to-pink-500', category: 'Frontend' },
     { name: 'UI / UX', icon: <FaFigma />, level: 75, color: 'from-pink-500 to-purple-500', category: 'Design' },
-    { name: 'Git', icon: <FaGitAlt />, level: 85, color: 'from-orange-600 to-red-600', category: 'Tools' },
+    { name: 'Git', icon: <FaGitAlt />, level: 80, color: 'from-orange-600 to-red-500', category: 'Tools' },
+    { name: 'Vs code', icon: <FaGitAlt />, level: 85, color: 'from-orange-600 to-red-600', category: 'Tools' },
   ]
 
   const categories = ['All', ...new Set(skills.map(s => s.category))]

@@ -1,5 +1,9 @@
-import { motion } from 'framer-motion'
-import { FaExternalLinkAlt, FaEye, FaGithub, FaStar } from 'react-icons/fa'
+import { motion } from 'framer-motion';
+import { FaExternalLinkAlt, FaEye, FaGithub, FaStar } from 'react-icons/fa';
+import Cc from '../../public/images/cc.png';
+import MrGroomer from '../../public/images/mr_groomer.png';
+import Outbox from '../../public/images/outbox.png';
+import Portfolio from '../../public/images/portfolio.png';
 
 const projects = [
   {
@@ -7,7 +11,7 @@ const projects = [
     description: 'Dubai-based pet grooming booking app with modern UI, real-time booking system, and service management.',
     tech: ['React', 'Node.js', 'Tailwind CSS', 'Firebase'],
     status: 'Live',
-    image: '/images/mr_groomer.png',
+    image: MrGroomer,
     liveLink: 'https://groomer.nablean.com',
     githubLink: '#',
     features: [
@@ -22,7 +26,7 @@ const projects = [
     description: 'Online education platform with course management, student dashboard, and interactive learning features.',
     tech: ['React', 'Node.js', 'Tailwind CSS', 'MongoDB'],
     status: 'Live',
-    image: '/images/outbox.png',
+    image: Outbox,
     liveLink: 'https://outbox.nablean.com',
     githubLink: '#',
     features: [
@@ -67,7 +71,7 @@ const projects = [
     description: 'Full-featured e-commerce platform with product management, cart, checkout, and order tracking.',
     tech: ['React', 'Redux', 'Node.js', 'Stripe'],
     status: 'Completed',
-    image: '/images/cc.png',
+    image: Cc,
     liveLink: 'https://cashcropconnect.com',
     githubLink: '#',
     features: [
@@ -82,7 +86,7 @@ const projects = [
     description: 'Modern animated portfolio website with interactive elements and smooth animations.',
     tech: ['React', 'Framer Motion', 'Tailwind CSS', 'Three.js'],
     status: 'Live',
-    image: '/images/portfolio.png',
+    image: Portfolio,
     liveLink: '#',
     githubLink: '#',
     features: [

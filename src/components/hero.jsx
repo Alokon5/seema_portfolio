@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion'
-import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { SiGmail } from 'react-icons/si'
+import { motion } from 'framer-motion';
+import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
+import SeemaImage from '../../public/images/seema_image.png';
 
 export default function Hero() {
   const scrollTo = (id) => {
@@ -146,7 +147,7 @@ export default function Hero() {
                 className="relative w-full h-full rounded-full overflow-hidden border-8 border-black bg-gradient-to-br from-gray-900 to-black"
               >
                 <img
-                  src="/images/seema_image.png"
+                  src={SeemaImage}
                   alt="Seema Sahu"
                   className="w-full h-full object-cover"
                   onError={(e) => {
